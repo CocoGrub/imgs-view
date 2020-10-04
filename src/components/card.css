@@ -1,6 +1,9 @@
 .card {
   display: grid;
-
+  grid-template-areas: "roof "
+  "main-image"
+  "floor "
+  ;
   background-color: white;
   margin: 15px 5px 4px 5px;
   width: 250px;
@@ -10,7 +13,7 @@
   border-radius: 3px;
 }
 .head {
-
+  grid-area: roof;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,12 +37,12 @@
   display: block;
 }
 .main-image img{
-
+  grid-area: main-image;
   width: 100%;
-  height: 200px;
+
 }
 .bottom {
-
+  grid-area: floor;
   margin: 10px;
   padding-bottom: 15px;
 }
@@ -48,8 +51,16 @@
   margin-top: 5px;
 }
 
-@media only screen and (max-width: 768px) {
-  .card  {
 
+
+@media only screen and (max-width: 768px) {
+  .card{
+    width: 100%;
+
+    grid-template-areas: "main-image" "roof"
+                        "main-image" "floor"
+
+  ;
   }
+
 }
