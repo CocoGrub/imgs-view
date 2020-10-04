@@ -1,6 +1,6 @@
 
 .App{
-    width: 1024px;
+    max-width: 1024px;
     margin: 0 auto;
 
 }
@@ -9,7 +9,7 @@
     /* maximum amount of columns */
     column-count: 3;
     /* gap between the columns */
-    column-gap: 16px;
+    column-gap: -16px;
 }
 .item{
     break-inside: avoid-column;
