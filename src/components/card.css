@@ -1,0 +1,39 @@
+.card {
+  background-color: white;
+
+  width: 30%;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(105, 99, 105, 0.59);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(105, 99, 105, 0.59);
+  box-shadow: 0px 0px 6px 0px rgba(105, 99, 105, 0.59);
+  border-radius: 3px;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  border-bottom: 1px solid black;
+}
+
+.person-info {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.image {
+  height: 200px;
+}
+.name-place {
+  padding-left: 10px;
+}
+.name-place * {
+  display: block;
+}
+.bottom {
+  margin: 10px;
+  padding-bottom: 15px;
+}
+.bottom-text {
+  padding-top: -10px;
+  margin-top: 5px;
+}
