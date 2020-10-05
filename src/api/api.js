@@ -1,6 +1,6 @@
 const fetchPhotos = async function () {
   const response = await fetch(
-    "https://www.flickr.com/services/rest/?method=flickr.interestingness.getList&api_key=ad1a207325de8a3844d698543f65a6b2&extras=date_upload&extras=count_faves&per_page=20&format=json&nojsoncallback=1"
+    "https://www.flickr.com/services/rest/?method=flickr.interestingness.getList&api_key=ad1a207325de8a3844d698543f65a6b2&extras=date_upload&extras=count_faves&per_page=24&format=json&nojsoncallback=1"
   );
 
   return await response.json();

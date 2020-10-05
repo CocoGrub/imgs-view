@@ -1,5 +1,6 @@
 .card {
   display: grid;
+
   grid-template-areas:
           "roof"
           "image"
@@ -58,16 +59,24 @@
 
 @media only screen and (max-width: 768px) {
   .card{
+
     width: 100%;
     grid-template-columns: 1fr 1fr;
+
     grid-template-areas:
             "image roof"
+            "image floor"
             "image floor"
 
   ;
   }
   .head{
+    align-self: start;
+    margin-top: 0;
     border-bottom: 1px solid #959292;
   }
+  .bottom{
 
+    height: 20px;
+  }
 }
