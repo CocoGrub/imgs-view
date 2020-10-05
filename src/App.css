@@ -18,7 +18,7 @@
 
 @media only screen and (max-width: 768px) {
     .masonry  {
-        width: 50%;
+        width: 100%;
         margin: 0 auto;
         column-count: 1;
     }

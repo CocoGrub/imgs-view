@@ -1,9 +1,10 @@
 .card {
   display: grid;
-  grid-template-areas: "roof "
-  "main-image"
-  "floor "
-  ;
+  grid-template-areas:
+          "roof"
+          "image"
+          "floor";
+
   background-color: white;
   margin: 15px 5px 4px 5px;
   width: 250px;
@@ -36,8 +37,10 @@
 .name-place * {
   display: block;
 }
+.main-image{
+  grid-area: image;
+}
 .main-image img{
-  grid-area: main-image;
   width: 100%;
 
 }
@@ -56,11 +59,15 @@
 @media only screen and (max-width: 768px) {
   .card{
     width: 100%;
-
-    grid-template-areas: "main-image" "roof"
-                        "main-image" "floor"
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+            "image roof"
+            "image floor"
 
   ;
+  }
+  .head{
+    border-bottom: 1px solid #959292;
   }
 
 }
